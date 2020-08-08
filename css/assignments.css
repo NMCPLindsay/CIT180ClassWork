@@ -1,0 +1,76 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:16pt;
+}
+a:link, a:visited{
+    color:darkslategrey;
+    text-decoration:underline;
+}
+a:hover, a:active{
+    color:white;
+    background-color:goldenrod;
+    text-decoration:none;
+}
+@keyframes slidein {
+    from {
+        margin-left:200%;
+        width: 300%;
+        }
+    
+    to {
+        margin-left: 0%;
+        width: 100%;
+        }
+    }    
+h1{
+    color:black;
+    text-shadow:2px 2px goldenrod;
+    font-size:42px;
+    
+    opacity:.8;
+    padding:20px;
+    border-radius:20px;
+    width:50%;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+  
+h2{
+    color:gray;
+    text-shadow:2px 2px goldenrod;
+    font-size:36px;
+    text-shadow:1px 1px 1px gray;
+    border-radius:20px;
+    padding:5px;
+    width:50%;
+}
+h3{
+    color:grey;
+    font-size:1.1em;
+    text-shadow:1px 1px 1px gray;
+    background-color:goldenrod;
+    border-radius:20px;
+    padding:15px;
+    width:30%;
+}
+p{
+    margin-left:30px;
+}
+section{
+    background-color:white;
+    opacity:.8;
+    width:50%;
+    border-radius:30px;
+    padding:20px;
+}
+.parallax {
+    /* The image used */
+    background-image: url("../Media/Robot and Clouds Powerpoint.jpg");
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }

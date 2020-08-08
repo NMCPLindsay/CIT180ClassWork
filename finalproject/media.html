@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Attlus Music Production</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Attlus Music Production" />
+    <meta name="keywords" content="Attlus, Music, Studio, Jam, Brian Hook, Guitar, Colorado" />
+    <link href="css/gridscreen.css" rel="stylesheet" media="all"/>
+    <link href="css/gridprint.css" rel="stylesheet" media="print"/>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <article class="grid-container">
+        <header class="heading"> 
+            <h1>Attlus Music Production</h1>
+        </header>
+        
+        <section class="Menu">
+            <nav>
+                <h2>Menu</h2> 
+	            <ul>
+	            <li><a href="https://www.facebook.com/brian.hook.397">Facebook,<br> Brian Hook</a></li>
+	            <li><a href="https://open.spotify.com/artist/5X5XVxWHNZD3j2kv9RwxdW">Spotify,<br>Listen to Music</a></li>
+	            <li><a href="https://www.youtube.com/channel/UC3piwncnhdRQkxOtmHAf8XA">YouTube <br>Music Videos</a></li>
+	            <li><a href="https://www.instagram.com/_attlus/">Instagram<br> On the 'gram</a></li>
+	            <li><a href="index.html">Main <br>Back to Home</a></li>
+	
+	            </ul>
+            </nav>
+        </section>
+        
+        <div class="Content">
+            <h2>Swim</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/v-K9EfXigpc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>Alive</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KZQc7UW0-v0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>Indra's Arrow</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MphB3xj8p0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+        <aside  class="right">
+            <script>
+                var Image = new Array("media/Hook.jpg", "media/hook2.jpg", "media/hook4.jpg");
+                var ImageNum=0;
+                var ImageLength=Image.length -1;
+                function changeImage(number){
+                    ImageNum = ImageNum + number;
+                    if (ImageNum > ImageLength)
+                        ImageNum=0;
+                    if (ImageNum < 0)
+                        ImageNum = ImageLength;
+                    document.getElementById("mySlides").src = Image[ImageNum];
+                    return;
+                }
+            </script>
+            <section  class="right"> 
+                <button type="button" id="previous" style="display:inline-block;margin-right:10%;" onclick="changeImage(-1)" >Previous</button>
+                <button type="button" id="next" onclick="changeImage(1)">Next</button>
+            </section>	
+            <section class="right" >	
+                <p style=width:50%;margin-left:5%;><img alt="photo slideshow" id="mySlides" src="media/Hook.jpg" style="width: 40%; max-width:150%; min-width:200px; height:auto;padding:10%; 
+                  background:#444; box-shadow:5px 5px white;"></p>
+            </section>
+            
+        </aside>
+        <footer class="contact">
+             
+              <p>&copy; Philip Lindsay 2020</p>
+        </footer>
+    </article>
+
+</body>
+
+</html>

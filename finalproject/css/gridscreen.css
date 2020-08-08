@@ -1,0 +1,113 @@
+body {
+	font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size:110%;
+	background:lightseagreen;
+}
+nav {
+	height:auto;
+	background:teal;
+    padding:10px;
+}
+nav a {
+    text-decoration:none;
+}
+nav ul li {
+	list-style:none;
+	border-bottom:white 2px solid;
+	border-right:white 2px solid;
+	text-align:center;
+	width:95%;
+	background:grey;
+}
+nav ul li a:link, nav ul li a:visited {
+    color:white;
+   	text-decoration:none;
+}
+nav ul li a:hover, nav ul li a:active{
+	display:block;
+    background:lightskyblue;
+    color:black;
+}
+a:link, a:visited, a:hover,a:active{
+	color:blue;
+	text-shadow:1px 1px black;
+}
+
+img{
+	width:50%;
+}
+img span{
+	width:600px;
+}
+.box{
+	text-indent:10px;
+	display:inline-grid;
+	margin-right:1%;
+	margin-left:1%;
+	margin-bottom:150px;
+	outline: 2px inset white;
+	width:25%;
+}
+  .header { grid-area: head; }
+   .nav { grid-area: menu; }
+   .main { grid-area: content; }
+   .aside { grid-area: right; }
+   .footer { grid-area: contact; }
+   .grid-container {
+      display:-moz-inline-grid;
+      grid-template-areas:
+         'head head head head head head'
+         'menu content content content content right'
+         'menu contact contact contact contact contact';
+   grid-gap: 10px;
+   background:lightseagreen;
+   padding: 10px;
+}
+.grid-container > div {
+   background: teal;
+   text-align: center;
+   padding: 20px 0;
+   font-size: 30px;
+   font-weight: bolder;
+   color: black;
+}
+.grid-container > aside{
+    background-image: url("../media/swim.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    display: flexbox;
+}
+.grid-container > section{
+    background: blue;
+    color: whitesmoke;
+    
+}
+@keyframes slidein {
+    from {
+        margin-left:200%;
+        width: 300%;
+        }
+    
+    to {
+        margin-left: 0%;
+        width: 100%;
+        }
+    }   
+.grid-container > header{
+    background-color: darkcyan;
+    color: whitesmoke;
+    font-family: 'Architects Daughter', cursive;
+    font-size: xx-large;
+    animation-name: slidein;
+    animation-duration: 5s;
+}    
+
+
+
+
+
+    
+   
+    
+    
