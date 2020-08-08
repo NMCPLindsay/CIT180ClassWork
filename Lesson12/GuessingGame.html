@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8>
+<title>Guessing Game Genie</title>
+<style>
+h1{
+	color:darkblue;
+	text-shadow:2px 2px lightblue;
+	font-size:30pt;
+	font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	text-align:center;
+}
+body{
+	font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	background:url('media/smoke-genie.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+button{
+	background:lightblue;
+	box-shadow:4px 4px black;
+	color:deeppink;
+	font-size:1.2em;
+}
+.pink{
+	color:deeppink;
+	font-weight:bold;
+	text-align:center;
+	font-size:2em;
+	outline: 2px solid deeppink;
+}
+section{
+	background-color:white; 
+	width:550px; 
+	border:5px darkblue groove; 
+	padding:10px;
+	opacity:0.95;"
+}
+</style>
+<script>
+	var computer = new Number;
+	var tries = new Number;
+	function getNumber()
+	{
+		tries=0;
+		document.getElementById("tries").value=tries;
+		computer= Math.floor((Math.Random()*100)+1);
+		document.getElementById("comments").value="I have a number and I am waiting for you to guess it";
+	}
+
+	function checkGuess()
+	{
+		var guess = new Number(document.getElementById("guess").value);
+		if (computer==guess){
+			document.getElementById("comments").value="You guessed correctly - Congratulations!! It only took" + tries + " tries!";
+		}
+		else if (computer<guess){
+			document.getElementById("comments").value="Your number is too high, try again!";
+			tries++;
+			document.getElementById("tries").value=tries;
+		}
+		else{
+			document.getElementById("comments").value="Your guess is too low, try again!";
+			tries++;
+			document.getElementById("tries").value=tries;
+		}
+	}
+</script>
+</head>
+<body>
+	<article>
+		<section>
+			<header>
+				<h1>Guessing Game Genie</h1>
+				<p>Number of Tries:<input type="text" id="tries" value=" " style="width: 60px">
+				<button onclick="getNumber()" style="float:right;">Start or Start Over</button></p>
+			</header>
+			<h4>Pick a number between 1 and 100 and I will tell you if you are high or low.&nbsp; 
+			See how many tries it takes before you can guess the number.</h4>
+			<div style="display:inline-flex; background-color:lightblue; width:100%">
+				<p>Your Guess<input type="text" id="guess" value=" " style="width: 60px">&nbsp;&nbsp;
+				<button onclick="checkGuess()" >Check your Guess</button></p>
+			</div>
+			<div style="text-align:center;">
+				<textarea rows="4" cols="30" id="comments" class="pink"  ></textarea>
+			</div>
+		</section>
+	</article>
+</body>
+</html>
