@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>A Trip to Endor</title>
+<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Nosifer" rel="stylesheet">
+<style>
+body{
+	background:url('Media/Endor.jpg'); 
+	
+    height: 100%;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;; 
+	background-color:black; 
+	color:black; 
+	font-size:14pt;
+	font-family: 'Encode Sans Expanded', sans-serif;
+	width:50%;	
+}
+article{
+	display:flex;
+	justify-content:space-between;
+	overflow:auto;
+	flex-wrap:wrap;
+	min-width:400px;
+	flex-direction:column;
+
+}
+article > section{
+	flex:1;
+	background-color:white;
+	opacity:0.9;
+	padding:1% 3%;
+	min-width:250px;
+	border:5px groove forestgreen;
+	border-radius:25px;
+	margin-bottom:1%;
+	overflow:auto;
+}
+header, footer{
+	background-color:white;
+	opacity:0.9;	
+	border-radius:30px;
+}
+audio, video{
+	margin-left:30px;
+}
+h1 {
+	text-align: center;
+	color: darkgreen;
+	font-size:36pt;
+	text-shadow:1px 1px 1px white;
+	font-family: 'Comic Sans', cursive;
+}
+
+h2 {
+	color:green;
+	font-size:20pt;
+	font-family: 'Comic Sans', cursive;	
+}
+h3 {
+	color:forestgreen;
+	font-size:16pt;
+	border-bottom:1px solid black;
+}
+
+hr {
+	color:white;
+	height:6px;
+	opacity:0.3;
+}
+a{
+	margin-left:20px;
+}
+a:link{
+	color:forestgreen;
+	text-decoration:underline;
+}
+a:visited{
+	color:lightgreen;
+	text-decoration:underline;
+}
+a:active{
+	color:green;
+	text-decoration:none;
+}
+a:hover{
+	color:white;
+	background-color:darkgreen;
+	text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+<header>
+	<h1>The Forest Moon</h1>
+</header>
+<article>
+	<section>
+		<h2>Vehicle Sounds</h2>
+		<h3>Embedded Sound:	</h3>
+		<audio controls>
+			<source src="Media/Speeder.mp3" type="audio/mp3">
+			<source src="Media/Speeder.ogg" type="audio/ogg">
+			<source src="Media/Speeder.wav" type="audio/wav">						
+			Your browser does not support the audio element, try the link instead: <a href="Media/Speeder.mp3">Click to hear the Speeder Bike!!!!</a>
+		</audio>
+		<h3>Sound Links:</h3>
+		<ul>
+			<li><a href="Media/ATST.wav">ATST.wav</a></li>
+			<li><a href="Media/ATST.mp3">ATST.mp3</a></li>
+			<li><a href="Media/ATST.ogg">ATST.ogg</a></li>
+		</ul>
+	</section>
+	<section>
+		<h2>Natural Sounds of the Forest</h2>
+		<h3>Video Link:</h3>
+		<p><a href="https://www.youtube.com/watch?v=6uEXykAHRJ0">Wicket meets Leia</a></p>
+	<h2></h2>
+		<h3>Video Links: </h3>
+		<ul>
+			<li><a href="https://www.youtube.com/watch?v=jo_4jkEOh2E">Forest Moon Slideshow</a></li>
+			<li><a href="https://www.youtube.com/watch?v=3tUuZrvadMQ">Native Dangers</a></li>
+			<li><a href="https://www.youtube.com/watch?v=7Tb4F9D1W_k">The Day the Empire Fell</a></li>
+		</ul>
+		
+	<h3>Endor Ambience<br> (embedded video)</h3>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/1dDBvOtRaSo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</section>
+</article>
+</body>
+
+</html>
